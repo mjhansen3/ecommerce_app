@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  eva_icons_flutter:
+    dependency: "direct main"
+    description:
+      name: eva_icons_flutter
+      sha256: "6d48a10b93590ab83eb092bee5adacdeb14f3d83f527a4b9e4092c363d56e2a8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.0"
   fake_async:
     dependency: transitive
     description:
@@ -57,14 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
-  floating_navigation_bar:
+  floaty_navy_bar:
     dependency: "direct main"
     description:
-      name: floating_navigation_bar
-      sha256: "4fdd6092cd5bc356716bcf0211b6efec5690beb6b0a1c60a1e6b1ad74aadccc5"
+      name: floaty_navy_bar
+      sha256: "19ea9d5e4e0d9d8382097762b7f9260cb9b9eacfef0de58b4a2df350e91fe9c4"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "1.0.3"
   flutter:
     dependency: "direct main"
     description: flutter
