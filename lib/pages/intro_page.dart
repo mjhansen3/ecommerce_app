@@ -22,7 +22,9 @@ class IntroPage extends StatelessWidget {
                   width: 250,
                 ),
               ),
-              const SizedBox(height: 48,),
+              const SizedBox(
+                height: 48,
+              ),
               const Text(
                 "Just Do It",
                 style: TextStyle(
@@ -30,7 +32,9 @@ class IntroPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              const SizedBox(height: 24,),
+              const SizedBox(
+                height: 24,
+              ),
               const Text(
                 "Brand new sneakers and custom kicks made with premium quality",
                 style: TextStyle(
@@ -39,9 +43,12 @@ class IntroPage extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 48,),
+              const SizedBox(
+                height: 48,
+              ),
               CustomButton(
-                onPressed: () => Navigator.of(context).pushNamed('/home'),
+                onPressed: () =>
+                    Navigator.of(context).pushReplacementNamed('/home'),
                 btnText: "Shop Now",
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

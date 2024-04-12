@@ -8,8 +8,8 @@ class CustomButton extends StatelessWidget {
   final double fontSize;
 
   const CustomButton({
-    super.key, 
-    required this.onPressed, 
+    super.key,
+    required this.onPressed,
     required this.btnText,
     required this.color,
     required this.fontWeight,

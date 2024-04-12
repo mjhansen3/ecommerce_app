@@ -29,19 +29,20 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Builder(
-          builder: (context) {
-            return IconButton(
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              icon: Icon(
+        leading: Builder(builder: (context) {
+          return IconButton(
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            icon: Padding(
+              padding: const EdgeInsets.only(left: 12.0),
+              child: Icon(
                 EvaIcons.menu2Outline,
                 color: Colors.black,
               ),
-            );
-          }
-        ),
+            ),
+          );
+        }),
       ),
       drawer: Drawer(
         backgroundColor: Colors.grey[900],
@@ -61,16 +62,14 @@ class _HomePageState extends State<HomePage> {
                     width: 80,
                   ),
                 ),
-                
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: Divider(
                     color: Colors.grey[800],
                   ),
                 ),
-                
                 const Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.only(left: 25.0, top: 8.0),
                   child: ListTile(
                     leading: Icon(
                       EvaIcons.homeOutline,
@@ -78,15 +77,12 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                       "Home",
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
+                      style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
-                
                 const Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.only(left: 25.0, top: 8.0),
                   child: ListTile(
                     leading: Icon(
                       EvaIcons.infoOutline,
@@ -94,15 +90,12 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                       "About",
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
+                      style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
-                
                 const Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.only(left: 25.0, top: 8.0),
                   child: ListTile(
                     leading: Icon(
                       EvaIcons.personOutline,
@@ -110,17 +103,14 @@ class _HomePageState extends State<HomePage> {
                     ),
                     title: Text(
                       "Profile",
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
+                      style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
               ],
             ),
-
             const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.only(left: 25.0, bottom: 25.0),
               child: ListTile(
                 leading: Icon(
                   EvaIcons.logOutOutline,
@@ -128,9 +118,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 title: Text(
                   "Logout",
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
